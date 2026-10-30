@@ -1,0 +1,11 @@
+import { chromium } from "@playwright/test";
+const dir = process.env.SHOTS; const errors = [];
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+page.on("console", (m) => m.type() === "error" && errors.push(m.text())); page.on("pageerror", (e) => errors.push(e.message));
+await page.goto("http://127.0.0.1:8080/"); await page.waitForSelector("#answerLines dd"); await page.waitForTimeout(500);
+await page.screenshot({ path: `${dir}/didatico-desktop.png`, clip: { x: 0, y: 0, width: 1440, height: 1500 }, fullPage: true });
+const m = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
+await m.goto("http://127.0.0.1:8080/"); await m.waitForSelector("#mnav"); await m.locator('#mnav button[data-t="escala"]').tap(); await m.waitForTimeout(400);
+await m.screenshot({ path: `${dir}/didatico-mobile.png`, fullPage: true });
+await browser.close(); console.log("erros:", errors.length ? errors : "nenhum");

@@ -1,0 +1,45 @@
+# Build (gerado por `npm run build`)
+dist/
+
+# Dependências e caches de Node
+node_modules/
+.npm/
+coverage/
+*.tsbuildinfo
+
+# Playwright (relatórios e artefatos de execução)
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache/
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Docker (sobrescritas locais)
+docker-compose.override.yml
+compose.override.yml
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# Editores e IDEs
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configurações locais do Claude Code
+.claude/settings.local.json

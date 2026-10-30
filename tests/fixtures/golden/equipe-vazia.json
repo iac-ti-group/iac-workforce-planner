@@ -1,0 +1,257 @@
+{
+  "name": "equipe-vazia",
+  "input": {
+    "seg": 20,
+    "tipo": "comercio",
+    "modelo": null,
+    "team": [],
+    "days": [
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 0
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 0
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 0
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 0
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 0
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 0
+      },
+      {
+        "on": true,
+        "a": "08:00",
+        "f": "14:00",
+        "need": 0
+      }
+    ],
+    "needAuto": true,
+    "tnAuto": true,
+    "tt": null,
+    "tn": null,
+    "fase": "40",
+    "contratar": true,
+    "alm": 60,
+    "almIni": "12:00",
+    "sal": 2150,
+    "ben": 150,
+    "ov": {
+
+    },
+    "names": {
+
+    },
+    "wk": 0,
+    "mtab": "ajustes"
+  },
+  "normalized": {
+    "seg": 20,
+    "tipo": "comercio",
+    "modelo": null,
+    "team": [],
+    "days": [
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 0
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 0
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 0
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 0
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 0
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 0
+      },
+      {
+        "on": true,
+        "a": "08:00",
+        "f": "14:00",
+        "need": 0
+      }
+    ],
+    "needAuto": true,
+    "tnAuto": true,
+    "tt": [
+      {
+        "ini": "07:00",
+        "auto": true
+      },
+      {
+        "ini": "13:00",
+        "auto": true
+      },
+      {
+        "ini": "10:00",
+        "auto": true
+      }
+    ],
+    "tn": [
+      [0,0,0],
+      [0,0,0],
+      [0,0,0]
+    ],
+    "fase": "40",
+    "contratar": true,
+    "alm": 60,
+    "almIni": "12:00",
+    "sal": 2150,
+    "ben": 150,
+    "ov": {
+
+    },
+    "names": {
+
+    },
+    "wk": 0,
+    "mtab": "ajustes"
+  },
+  "schedule": {
+    "workload": {
+      "workDays": 5,
+      "dailyMinutes": 480,
+      "weeklyLimitHours": 40,
+      "minDaysOff": 2,
+      "weeklyHours": 40,
+      "label": null,
+      "minutesByDay": [480,480,480,480,480,480,480]
+    },
+    "roster": [],
+    "weeks": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "demand": [0,0,0,0,0,0,0],
+    "requiredHeadcount": 0,
+    "hires": 0,
+    "teamSize": 0,
+    "span": 540,
+    "usesShifts": true,
+    "shiftShortages": [],
+    "assignments": [
+      [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    ]
+  },
+  "compliance": {
+    "alerts": [
+      ["ok","compliant","Escala dentro das regras","2 folgas por semana, domingos no revezamento certo e nenhum período de 7 dias seguidos nas 4 semanas.",null]
+    ],
+    "cellErrors": [],
+    "weeksWithIssues": []
+  },
+  "cost": {
+    "teamSize": 0,
+    "costPerEmployee": 3912.5,
+    "payroll": 0,
+    "targetPhase": "40",
+    "hourlyCostToday": 17.78409090909091,
+    "hourlyCostTarget": 19.5625,
+    "hourlyIncreasePercent": 10.000000000000009,
+    "hoursLostPerMonth": 0,
+    "costToKeepCoverage": 0,
+    "missingHeadcount": 0,
+    "hiringCost": 0,
+    "overtimeCost": 0,
+    "hourlyCostByPhase": [
+      {
+        "phase": "44",
+        "hourlyCost": 17.78409090909091,
+        "increasePercent": 0
+      },
+      {
+        "phase": "42",
+        "hourlyCost": 18.63095238095238,
+        "increasePercent": 4.761904761904767
+      },
+      {
+        "phase": "40",
+        "hourlyCost": 19.5625,
+        "increasePercent": 10.000000000000009
+      }
+    ]
+  }
+}

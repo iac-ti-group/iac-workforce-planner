@@ -1,0 +1,428 @@
+{
+  "name": "aleatorio-17",
+  "input": {
+    "seg": 3,
+    "tipo": "comercio",
+    "modelo": null,
+    "team": [
+      {
+        "n": "P0",
+        "s": "F"
+      },
+      {
+        "n": "P1",
+        "s": "M"
+      },
+      {
+        "n": "P2",
+        "s": "M"
+      },
+      {
+        "n": "P3",
+        "s": "F"
+      }
+    ],
+    "days": [
+      {
+        "on": true,
+        "a": "06:00",
+        "f": "23:00",
+        "need": 4
+      },
+      {
+        "on": true,
+        "a": "06:00",
+        "f": "23:00",
+        "need": 4
+      },
+      {
+        "on": true,
+        "a": "06:00",
+        "f": "23:00",
+        "need": 4
+      },
+      {
+        "on": true,
+        "a": "06:00",
+        "f": "23:00",
+        "need": 4
+      },
+      {
+        "on": true,
+        "a": "06:00",
+        "f": "23:00",
+        "need": 3
+      },
+      {
+        "on": true,
+        "a": "06:00",
+        "f": "23:00",
+        "need": 3
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 2
+      }
+    ],
+    "needAuto": true,
+    "tnAuto": true,
+    "tt": null,
+    "tn": null,
+    "fase": "42",
+    "contratar": false,
+    "alm": 45,
+    "almIni": "12:00",
+    "sal": 2150,
+    "ben": 150,
+    "ov": {
+      "novo1-0-3": true
+    },
+    "names": {
+
+    },
+    "wk": 0,
+    "mtab": "ajustes"
+  },
+  "normalized": {
+    "seg": 3,
+    "tipo": "comercio",
+    "modelo": null,
+    "team": [
+      {
+        "n": "P0",
+        "s": "F"
+      },
+      {
+        "n": "P1",
+        "s": "M"
+      },
+      {
+        "n": "P2",
+        "s": "M"
+      },
+      {
+        "n": "P3",
+        "s": "F"
+      }
+    ],
+    "days": [
+      {
+        "on": true,
+        "a": "06:00",
+        "f": "23:00",
+        "need": 4
+      },
+      {
+        "on": true,
+        "a": "06:00",
+        "f": "23:00",
+        "need": 4
+      },
+      {
+        "on": true,
+        "a": "06:00",
+        "f": "23:00",
+        "need": 4
+      },
+      {
+        "on": true,
+        "a": "06:00",
+        "f": "23:00",
+        "need": 4
+      },
+      {
+        "on": true,
+        "a": "06:00",
+        "f": "23:00",
+        "need": 4
+      },
+      {
+        "on": true,
+        "a": "06:00",
+        "f": "23:00",
+        "need": 3
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "22:00",
+        "need": 2
+      }
+    ],
+    "needAuto": true,
+    "tnAuto": true,
+    "tt": [
+      {
+        "ini": "06:00",
+        "auto": true
+      },
+      {
+        "ini": "13:51",
+        "auto": true
+      },
+      {
+        "ini": "10:00",
+        "auto": true
+      }
+    ],
+    "tn": [
+      [2,2,0],
+      [2,1,0],
+      [1,1,0]
+    ],
+    "fase": "42",
+    "contratar": false,
+    "alm": 45,
+    "almIni": "12:00",
+    "sal": 2150,
+    "ben": 150,
+    "ov": {
+      "novo1-0-3": true
+    },
+    "names": {
+
+    },
+    "wk": 0,
+    "mtab": "ajustes"
+  },
+  "schedule": {
+    "workload": {
+      "workDays": 5,
+      "dailyMinutes": 504,
+      "weeklyLimitHours": 42,
+      "minDaysOff": 2,
+      "weeklyHours": 42,
+      "label": null,
+      "minutesByDay": [504,504,504,504,504,504,504]
+    },
+    "roster": [
+      ["P0","F",false,null],
+      ["P1","M",false,null],
+      ["P2","M",false,null],
+      ["P3","F",false,null]
+    ],
+    "weeks": [
+      ["0111011","1011101","1101110","1111100"],
+      ["1110110","1111010","1011101","0101111"],
+      ["1101101","1111100","0111011","1011110"],
+      ["1111100","1001111","1110110","0111011"]
+    ],
+    "demand": [4,4,4,4,4,3,2],
+    "requiredHeadcount": 5,
+    "hires": 0,
+    "teamSize": 4,
+    "span": 549,
+    "usesShifts": true,
+    "shiftShortages": [
+      [0,0,0,1],
+      [0,1,0,1],
+      [0,2,1,1],
+      [0,4,0,1],
+      [0,5,0,1],
+      [1,0,1,1],
+      [1,1,1,1],
+      [1,2,1,1],
+      [1,3,0,1],
+      [1,4,0,1],
+      [2,0,1,1],
+      [2,1,1,1],
+      [2,2,0,1],
+      [2,4,1,1],
+      [2,5,0,1],
+      [3,0,1,1],
+      [3,1,0,1],
+      [3,2,0,1],
+      [3,3,1,1],
+      [3,4,1,1]
+    ],
+    "assignments": [
+      [
+        [
+          [1,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [1,360,909,720,45,0,"Turno 1"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [1,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [1,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,420,969,720,45,0,"Turno 1"],
+          [1,771,1320,1011,45,1,"Turno 2"]
+        ]
+      ],
+      [
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [1,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [1,360,909,720,45,0,"Turno 1"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [1,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [1,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [1,360,909,720,45,0,"Turno 1"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [2,771,1320,1011,45,1,"Turno 2"],
+          [3,420,969,720,45,0,"Turno 1"]
+        ]
+      ],
+      [
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [1,360,909,720,45,0,"Turno 1"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [1,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [1,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [1,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [1,360,909,720,45,0,"Turno 1"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [2,831,1380,1071,45,1,"Turno 2"],
+          [3,360,909,720,45,0,"Turno 1"]
+        ],
+        [
+          [0,420,969,720,45,0,"Turno 1"],
+          [2,771,1320,1011,45,1,"Turno 2"]
+        ]
+      ],
+      [
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [1,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [1,360,909,720,45,0,"Turno 1"],
+          [3,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [0,360,909,720,45,0,"Turno 1"],
+          [1,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"]
+        ],
+        [
+          [1,360,909,720,45,0,"Turno 1"],
+          [2,831,1380,1071,45,1,"Turno 2"],
+          [3,360,909,720,45,0,"Turno 1"]
+        ],
+        [
+          [1,420,969,720,45,0,"Turno 1"],
+          [3,771,1320,1011,45,1,"Turno 2"]
+        ]
+      ]
+    ]
+  },
+  "compliance": {
+    "alerts": [
+      ["warn","coverage-gap","Faltam pessoas em alguns dias","Seg: falta 1 · Ter: falta 1 · Qua: falta 1 · Qui: falta 1 · Sex: falta 1 · Sáb: falta 1. Marque “Incluir as contratações” ou reduza as pessoas por dia.",null],
+      ["warn","shift-gap","Turnos sem gente suficiente","Turno 1 de Seg: falta 1 · Turno 1 de Ter: falta 1 · Turno 2 de Qua: falta 1 · Turno 1 de Sex: falta 1 · Turno 1 de Sáb: falta 1 · Turno 2 de Seg: falta 1.",null],
+      ["warn","short-lunch","Almoço de 45 min exige convenção","Intervalo menor que 1h em jornada acima de 6h só vale com convenção ou acordo coletivo (mínimo de 30 min) ou autorização do MTE.",null],
+      ["warn","agreement-required","8h24 por dia exige convenção","Sem convenção ou acordo coletivo que autorize, use a escala de 40h (5 × 8h) já em dezembro.",null]
+    ],
+    "cellErrors": [],
+    "weeksWithIssues": [0,1,2,3]
+  },
+  "cost": {
+    "teamSize": 4,
+    "costPerEmployee": 3912.5,
+    "payroll": 15650,
+    "targetPhase": "42",
+    "hourlyCostToday": 17.78409090909091,
+    "hourlyCostTarget": 18.63095238095238,
+    "hourlyIncreasePercent": 4.761904761904767,
+    "hoursLostPerMonth": 40,
+    "costToKeepCoverage": 745.2380952380952,
+    "missingHeadcount": 1,
+    "hiringCost": 3912.5,
+    "overtimeCost": 4837.499999999999,
+    "hourlyCostByPhase": [
+      {
+        "phase": "44",
+        "hourlyCost": 17.78409090909091,
+        "increasePercent": 0
+      },
+      {
+        "phase": "42",
+        "hourlyCost": 18.63095238095238,
+        "increasePercent": 4.761904761904767
+      },
+      {
+        "phase": "40",
+        "hourlyCost": 19.5625,
+        "increasePercent": 10.000000000000009
+      }
+    ]
+  }
+}

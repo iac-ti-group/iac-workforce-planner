@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B0B0C">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="Simulador da escala 5x2 (EC 141/2026) da IAC Contabilidade Consultiva.">
+<title>Simulador Escala 5x2</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/logo.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><img src="assets/logo.png" alt="IAC"></div>
+    <div class="ttl">
+      <h1>Simulador <span>Escala 5x2</span></h1>
+      <p>Fim da 6x1 (EC 141/2026). Ajuste à esquerda e a escala se refaz na hora.</p>
+    </div>
+    <img class="ceo" src="assets/ceo.jpg" alt="CEO da IAC Contabilidade Consultiva">
+    <div class="mfase" id="mfase" role="group" aria-label="Jornada"><button data-v="44">Hoje 44h</button><button data-v="42">42h</button><button data-v="40">40h</button></div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Seções">
+  <div class="wrap" role="tablist">
+    <button role="tab" data-tab="sim" aria-selected="true">Simular escala</button>
+    <button role="tab" data-tab="regras" aria-selected="false">Regras da mudança</button>
+  </div>
+</nav>
+
+<main>
+<div class="wrap">
+
+<section id="pane-sim" class="sim">
+  <aside class="side" data-m="ajustes">
+    <div class="card">
+      <div class="step"><b>1</b><h2>Segmento</h2></div>
+      <div><label class="l" for="segm">Ramo da empresa</label><select id="segm"></select></div>
+      <div><label class="l">Tipo de atividade</label>
+        <div class="seg" id="tipo"><button data-v="comercio">Comércio</button><button data-v="outros">Outras</button></div>
+        <p class="hint" id="tipoHint" style="margin-top:4px"></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="step"><b>2</b><h2>Dias em que a empresa abre</h2></div>
+      <div class="dayrow" id="dayrow"></div>
+      <details class="exs">
+        <summary>Ou use um exemplo de jornada de 44h</summary>
+        <div class="modelos" id="modelos">
+          <button class="modelo" data-m="5"><span class="mt">Seg a sex <em>44h</em></span><span class="mh"><b>Seg–Sex</b> 08:00 às 17:48 · 8h48 + 1h almoço</span><span class="mh">Sábado e domingo de folga</span></button>
+          <button class="modelo" data-m="6"><span class="mt">Seg a sáb <em>44h</em></span><span class="mh"><b>Seg–Sex</b> 08:00 às 17:00 · 8h + 1h almoço</span><span class="mh"><b>Sábado</b> 08:00 às 12:00 · 4h · domingo de folga</span></button>
+          <button class="modelo" data-m="7"><span class="mt">Seg a dom <em>44h</em></span><span class="mh"><b>Todos os dias</b> 08:00 às 16:20 · 7h20 + 1h almoço</span><span class="mh">6x1: cada pessoa folga 1 dia, em revezamento</span></button>
+        </div>
+      </details>
+    </div>
+
+    <div class="card">
+      <div class="step"><b>3</b><h2>Horário de funcionamento</h2></div>
+      <div class="func" id="func"></div>
+      <p class="hint">Vale para os dias marcados acima. Para um dia diferente, use o ajuste manual no fim.</p>
+    </div>
+
+    <div class="card">
+      <div class="step"><b>4</b><h2>Horário de almoço</h2></div>
+      <div class="alm">
+        <div><label class="l" for="almDur">Duração</label>
+          <select id="almDur"><option value="30">30 min (com convenção)</option><option value="45">45 min (com convenção)</option><option value="60">1h</option><option value="75">1h15</option><option value="90">1h30</option><option value="120">2h</option><option value="150">2h30 (com acordo)</option><option value="180">3h (com acordo)</option></select></div>
+        <div><label class="l" for="almIni">Almoço começa às</label><input type="time" id="almIni" value="12:00"></div>
+        <p class="hint full">Vale para jornadas acima de 6h. Quem entra mais tarde e não alcança esse horário almoça 4h depois da entrada.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="step"><b>5</b><h2>Sua equipe</h2></div>
+      <div class="counts">
+        <div><label class="l">Mulheres</label><div class="stepper"><button data-c="F" data-d="-1" aria-label="Menos uma mulher">−</button><output id="cF">0</output><button data-c="F" data-d="1" aria-label="Mais uma mulher">+</button></div></div>
+        <div><label class="l">Homens</label><div class="stepper"><button data-c="M" data-d="-1" aria-label="Menos um homem">−</button><output id="cM">0</output><button data-c="M" data-d="1" aria-label="Mais um homem">+</button></div></div>
+      </div>
+      <p class="hint">O sexo define a folga aos domingos. Os nomes você troca direto na escala.</p>
+    </div>
+
+    <div class="card">
+      <div class="step"><b>6</b><h2 id="sugTitle">Sugestão de funcionamento</h2></div>
+      <p class="hint" id="sugHint"></p>
+      <div class="sug" id="sug"></div>
+      <div class="scroll"><table class="tn" id="tn"></table></div>
+      <button class="linkbtn" id="tnAuto" hidden>Voltar aos turnos sugeridos</button>
+    </div>
+
+    <div class="card">
+      <div class="step"><b>7</b><h2>Ajuste manual <span class="opt">opcional</span></h2></div>
+      <details class="exs" id="manBox">
+        <summary>Editar abertura e fechamento de um dia específico</summary>
+        <table class="days">
+          <thead><tr><th>Dia</th><th>Abre</th><th>Fecha</th></tr></thead>
+          <tbody id="days"></tbody>
+        </table>
+        <button class="linkbtn" id="needAuto">Voltar à sugestão</button>
+      </details>
+      <p class="hint">Na escala você também pode mover as folgas de cada pessoa.</p>
+    </div>
+    <button class="btn pri mbtn" id="verEscala">Ver a escala →</button>
+  </aside>
+
+  <div class="main">
+    <div class="fases" id="fases" data-m="escala">
+      <button class="fase" data-v="44"><span class="big">Hoje · 44h</span><span class="sub">6x1, válido até 15/12/2026</span></button>
+      <button class="fase" data-v="42"><span class="big">42h · 5x2</span><span class="sub">5 dias de 8h24 · a partir de 16/12/2026</span></button>
+      <button class="fase" data-v="40"><span class="big">40h · 5x2</span><span class="sub">5 dias de 8h · obrigatório em 16/12/2027</span></button>
+    </div>
+
+    <div class="bar" data-m="escala">
+      <label class="switch"><input type="checkbox" id="contratar"> Incluir as contratações necessárias na escala</label>
+      <div class="row">
+        <button class="btn" id="undo" hidden>Desfazer ajustes manuais</button>
+        <button class="btn" id="copy">Copiar semana</button>
+        <button class="btn" id="exemplo">Carregar exemplo</button>
+      </div>
+    </div>
+
+    <div class="kpis" id="kpis" data-m="escala"></div>
+
+    <div class="card gridcard" data-m="escala">
+      <div class="ghead">
+        <h2 id="gtitle">Escala</h2>
+        <div class="weeks" id="weeks"></div>
+      </div>
+      <div class="scroll dsk"><table class="esc" id="esc"></table></div>
+      <div class="mesc" id="mesc"></div>
+      <div class="legend dsk">
+        <span><i style="background:var(--accent)"></i>Trabalha · turno 1</span><span><i style="background:#EED7A4"></i>Turno 2</span><span><i style="background:#C99A52"></i>Turno 3</span>
+        <span><i style="background:var(--off)"></i>Folga</span>
+        <span><i style="border:1px dashed var(--line)"></i>Empresa fechada</span>
+        <span><b style="color:var(--ink)">Arraste uma folga</b> para outro dia da mesma semana · clique para trocar trabalho ↔ folga</span>
+      </div>
+    </div>
+
+    <div class="alerts" id="alerts" data-m="escala"></div>
+
+    <div class="card" data-m="custo">
+      <div class="step"><b>$</b><h2>Custo mensal da equipe</h2></div>
+      <div class="cost">
+        <div><label class="l" for="sal">Salário médio / piso (R$)</label><input type="text" id="sal" inputmode="decimal" placeholder="2.150,00"></div>
+        <div><label class="l">Encargos e provisões</label><div class="fixo"><b>75%</b><span>percentual fixo</span></div></div>
+        <div><label class="l" for="ben">Benefícios por pessoa (R$)</label><input type="text" id="ben" inputmode="decimal" placeholder="0,00"></div>
+      </div>
+      <div id="cres" style="display:grid;gap:10px"></div>
+      <div id="cobs"></div>
+      <p class="hint">Encargos e provisões fixos em 75% sobre o salário (INSS, FGTS, 13º, férias + 1/3 e reflexos). O salário não pode cair; com menos horas trabalhadas, cada hora fica mais cara.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pane-regras" data-m="regras" hidden>
+  <div class="tl">
+    <div><b>16/10/2026</b><span>EC 141 publicada</span></div>
+    <div><b>Até 15/12/2026</b><span>Ainda vale 44h e 6x1</span></div>
+    <div><b>16/12/2026</b><span>Teto de 42h + 2 folgas</span></div>
+    <div><b>16/12/2027</b><span>Teto final de 40h</span></div>
+  </div>
+  <div class="rules">
+    <div class="rule"><span class="law">CF art. 7º, XV</span><h3>Duas folgas por semana</h3><p>Cada empregado passa a ter 2 repousos semanais remunerados, um deles de preferência no domingo. As folgas não precisam ser seguidas nem cair no fim de semana; a empresa escolhe os dias.</p></div>
+    <div class="rule"><span class="law">CF art. 7º, XIII</span><h3>44h → 42h → 40h</h3><p>O limite diário segue em 8 horas. O teto semanal cai para 42h em 16/12/2026 e para 40h em 16/12/2027.</p></div>
+    <div class="rule"><span class="law">EC 141 art. 3º</span><h3>8h24 por dia só com convenção</h3><p>Fazer 42h em 5 dias exige 8h24 por dia, o que só vale com convenção ou acordo coletivo. Sem isso, o caminho seguro é 5 × 8h = 40h já em dezembro.</p></div>
+    <div class="rule"><span class="law">EC 141 art. 7º</span><h3>Salário não pode cair</h3><p>Nenhuma redução nominal ou proporcional, inclusive nos pisos da convenção. Para horistas, o valor da hora sobe para manter o salário do mês.</p></div>
+    <div class="rule"><span class="law">CLT art. 386 · TST</span><h3>Mulheres: domingos alternados</h3><p>Quem trabalha aos domingos segue revezamento quinzenal: trabalhou um domingo, folga no seguinte. Vale também no comércio. Domingo fora da regra é pago em dobro.</p></div>
+    <div class="rule"><span class="law">Lei 10.101/2000 art. 6º</span><h3>Homens no comércio: 1 domingo a cada 3</h3><p>Com lei municipal que permita, a folga deve cair no domingo ao menos uma vez a cada 3 semanas. Em atividades com autorização permanente (restaurantes, farmácias, hotéis), ao menos 1 a cada 7 semanas.</p></div>
+    <div class="rule"><span class="law">OJ 410 SDI-1</span><h3>Nunca 7 dias seguidos</h3><p>Folga dada depois do 7º dia seguido de trabalho é paga em dobro. Atenção na virada da semana: folga na segunda e, na semana seguinte, no domingo gera 12 dias corridos.</p></div>
+    <div class="rule"><span class="law">Portaria MTE 1.316/2026</span><h3>Feriados no comércio</h3><p>Trabalho em feriado no comércio só com autorização da convenção coletiva e da lei municipal. Acordo individual não basta. Feriado trabalhado sem folga compensatória é pago em dobro.</p></div>
+    <div class="rule"><span class="law">TST Súmula 431</span><h3>O valor da hora sobe</h3>
+      <table class="div"><thead><tr><th>Jornada</th><th>Divisor</th><th>Hora (R$ 3.000)</th></tr></thead>
+      <tbody><tr><td>44h</td><td class="n">220</td><td class="n">13,64</td></tr><tr><td>42h</td><td class="n">210</td><td class="n">14,29</td></tr><tr><td>40h</td><td class="n">200</td><td class="n">15,00</td></tr></tbody></table>
+      <p class="small muted">O 210 para 42h é a leitura proporcional mais aceita, ainda sem decisão específica dos tribunais.</p></div>
+  </div>
+  <footer>IAC Contabilidade Consultiva · Araras/SP. Simulação orientativa; confira a convenção coletiva do seu sindicato antes de aplicar.</footer>
+</section>
+
+</div>
+</main>
+<nav class="mnav" id="mnav" aria-label="Navegação">
+  <button data-t="ajustes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0" /><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg><span>Ajustes</span></button>
+  <button data-t="escala"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Escala</span><em id="mbadge" hidden>0</em></button>
+  <button data-t="custo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M16 7.5c0-1.7-1.8-3-4-3s-4 1.3-4 3 1.8 2.6 4 3 4 1.3 4 3-1.8 3-4 3-4-1.3-4-3"/></svg><span>Custo</span></button>
+  <button data-t="regras"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h8M8 18h5"/></svg><span>Regras</span></button>
+</nav>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
