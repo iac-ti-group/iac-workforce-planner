@@ -1,0 +1,24 @@
+{
+  "name": "iac-workforce-planner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simulador da escala 5x2 (EC 141/2026): escala de 4 semanas, regras trabalhistas e custo.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "docker compose up -d",
+    "stop": "docker compose down",
+    "build": "node scripts/build-standalone.mjs",
+    "test": "node --test \"tests/**/*.test.js\"",
+    "golden:update": "node tests/golden/generate.mjs",
+    "bench": "node scripts/benchmark.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:src": "playwright test --project=src",
+    "test:e2e:dist": "playwright test --project=dist"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}

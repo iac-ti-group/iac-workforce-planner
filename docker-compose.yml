@@ -1,0 +1,31 @@
+# Ambiente local: docker compose up -d  →  http://localhost:8080
+#
+# - src/ é montado somente leitura: editar e recarregar a página basta (sem rebuild).
+# - Segurança: nginx sem root, sistema de arquivos somente leitura, sem capabilities,
+#   sem escalonamento de privilégio e porta publicada só para esta máquina (127.0.0.1).
+#   Para abrir na rede local (ex.: testar no celular), use APP_BIND=0.0.0.0.
+services:
+  web:
+    image: nginxinc/nginx-unprivileged:1.27-alpine@sha256:65e3e85dbaed8ba248841d9d58a899b6197106c23cb0ff1a132b7bfe0547e4c0
+    container_name: iac-workforce-planner
+    ports:
+      - "${APP_BIND:-127.0.0.1}:${APP_PORT:-8080}:8080"
+    volumes:
+      - ./src:/usr/share/nginx/html:ro
+      - ./config/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 64m
+    pids_limit: 64
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:8080/"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    restart: unless-stopped

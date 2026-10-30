@@ -1,0 +1,10 @@
+{
+  "name": "Simulador Escala 5x2 · IAC",
+  "short_name": "Escala 5x2",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0B0B0C",
+  "theme_color": "#0B0B0C",
+  "lang": "pt-BR",
+  "icons": [{ "src": "assets/images/logo.png", "sizes": "any", "type": "image/png" }]
+}

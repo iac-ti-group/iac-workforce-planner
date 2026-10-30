@@ -1,0 +1,601 @@
+{
+  "name": "ramo-01-40h",
+  "input": {
+    "seg": 1,
+    "tipo": "comercio",
+    "modelo": null,
+    "team": [
+      {
+        "n": "Pessoa 1",
+        "s": "F"
+      },
+      {
+        "n": "Pessoa 2",
+        "s": "F"
+      },
+      {
+        "n": "Pessoa 3",
+        "s": "M"
+      },
+      {
+        "n": "Pessoa 4",
+        "s": "F"
+      },
+      {
+        "n": "Pessoa 5",
+        "s": "M"
+      },
+      {
+        "n": "Pessoa 6",
+        "s": "M"
+      },
+      {
+        "n": "Pessoa 7",
+        "s": "F"
+      },
+      {
+        "n": "Pessoa 8",
+        "s": "M"
+      },
+      {
+        "n": "Pessoa 9",
+        "s": "F"
+      },
+      {
+        "n": "Pessoa 10",
+        "s": "M"
+      }
+    ],
+    "days": [
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "18:00",
+        "need": 10
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "18:00",
+        "need": 10
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "18:00",
+        "need": 10
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "18:00",
+        "need": 10
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "18:00",
+        "need": 10
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "13:00",
+        "need": 10
+      },
+      {
+        "on": false,
+        "a": "07:00",
+        "f": "18:00",
+        "need": 0
+      }
+    ],
+    "needAuto": true,
+    "tnAuto": true,
+    "tt": null,
+    "tn": null,
+    "fase": "40",
+    "contratar": true,
+    "alm": 60,
+    "almIni": "12:00",
+    "sal": 2150,
+    "ben": 150,
+    "ov": {
+
+    },
+    "names": {
+
+    },
+    "wk": 0,
+    "mtab": "ajustes"
+  },
+  "normalized": {
+    "seg": 1,
+    "tipo": "comercio",
+    "modelo": null,
+    "team": [
+      {
+        "n": "Pessoa 1",
+        "s": "F"
+      },
+      {
+        "n": "Pessoa 2",
+        "s": "F"
+      },
+      {
+        "n": "Pessoa 3",
+        "s": "M"
+      },
+      {
+        "n": "Pessoa 4",
+        "s": "F"
+      },
+      {
+        "n": "Pessoa 5",
+        "s": "M"
+      },
+      {
+        "n": "Pessoa 6",
+        "s": "M"
+      },
+      {
+        "n": "Pessoa 7",
+        "s": "F"
+      },
+      {
+        "n": "Pessoa 8",
+        "s": "M"
+      },
+      {
+        "n": "Pessoa 9",
+        "s": "F"
+      },
+      {
+        "n": "Pessoa 10",
+        "s": "M"
+      }
+    ],
+    "days": [
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "18:00",
+        "need": 10
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "18:00",
+        "need": 10
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "18:00",
+        "need": 10
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "18:00",
+        "need": 10
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "18:00",
+        "need": 10
+      },
+      {
+        "on": true,
+        "a": "07:00",
+        "f": "13:00",
+        "need": 10
+      },
+      {
+        "on": false,
+        "a": "07:00",
+        "f": "18:00",
+        "need": 0
+      }
+    ],
+    "needAuto": true,
+    "tnAuto": true,
+    "tt": null,
+    "tn": null,
+    "fase": "40",
+    "contratar": true,
+    "alm": 60,
+    "almIni": "12:00",
+    "sal": 2150,
+    "ben": 150,
+    "ov": {
+
+    },
+    "names": {
+
+    },
+    "wk": 0,
+    "mtab": "ajustes"
+  },
+  "schedule": {
+    "workload": {
+      "workDays": 5,
+      "dailyMinutes": 480,
+      "weeklyLimitHours": 40,
+      "minDaysOff": 2,
+      "weeklyHours": 40,
+      "label": null,
+      "minutesByDay": [480,480,480,480,480,480,480]
+    },
+    "roster": [
+      ["Pessoa 1","F",false,null],
+      ["Pessoa 2","F",false,null],
+      ["Pessoa 3","M",false,null],
+      ["Pessoa 4","F",false,null],
+      ["Pessoa 5","M",false,null],
+      ["Pessoa 6","M",false,null],
+      ["Pessoa 7","F",false,null],
+      ["Pessoa 8","M",false,null],
+      ["Pessoa 9","F",false,null],
+      ["Pessoa 10","M",false,null],
+      ["Nova contratação 1","N",true,"novo1"],
+      ["Nova contratação 2","N",true,"novo2"]
+    ],
+    "weeks": [
+      ["1111100","1111010","1111100","1111010","1110110","1101110","1110110","1101110","1011110","0111110","1011110","0111110"],
+      ["1111010","1110110","1101110","1110110","1101110","1011110","0111110","1011110","0111110","1111100","1111010","1111100"],
+      ["1110110","1101110","1011110","0111110","1011110","0111110","1111100","1111010","1111100","1111010","1110110","1101110"],
+      ["0111110","1011110","0111110","1111100","1111010","1111100","1111010","1110110","1101110","1110110","1101110","1011110"]
+    ],
+    "demand": [10,10,10,10,10,10,0],
+    "requiredHeadcount": 12,
+    "hires": 2,
+    "teamSize": 10,
+    "span": 540,
+    "usesShifts": false,
+    "shiftShortages": [],
+    "assignments": [
+      [
+        [
+          [0,420,960,720,60,null,null],
+          [1,430,970,720,60,null,null],
+          [2,450,990,720,60,null,null],
+          [3,460,1000,720,60,null,null],
+          [4,470,1010,720,60,null,null],
+          [5,490,1030,720,60,null,null],
+          [6,500,1040,720,60,null,null],
+          [7,510,1050,720,60,null,null],
+          [8,530,1070,720,60,null,null],
+          [10,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [1,430,970,720,60,null,null],
+          [2,450,990,720,60,null,null],
+          [3,460,1000,720,60,null,null],
+          [4,470,1010,720,60,null,null],
+          [5,490,1030,720,60,null,null],
+          [6,500,1040,720,60,null,null],
+          [7,510,1050,720,60,null,null],
+          [9,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [1,430,970,720,60,null,null],
+          [2,450,990,720,60,null,null],
+          [3,460,1000,720,60,null,null],
+          [4,470,1010,720,60,null,null],
+          [6,490,1030,720,60,null,null],
+          [8,500,1040,720,60,null,null],
+          [9,510,1050,720,60,null,null],
+          [10,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [1,430,970,720,60,null,null],
+          [2,450,990,720,60,null,null],
+          [3,460,1000,720,60,null,null],
+          [5,470,1010,720,60,null,null],
+          [7,490,1030,720,60,null,null],
+          [8,500,1040,720,60,null,null],
+          [9,510,1050,720,60,null,null],
+          [10,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [2,430,970,720,60,null,null],
+          [4,450,990,720,60,null,null],
+          [5,460,1000,720,60,null,null],
+          [6,470,1010,720,60,null,null],
+          [7,490,1030,720,60,null,null],
+          [8,500,1040,720,60,null,null],
+          [9,510,1050,720,60,null,null],
+          [10,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [1,420,960,720,60,null,null],
+          [3,420,960,720,60,null,null],
+          [4,420,960,720,60,null,null],
+          [5,420,960,720,60,null,null],
+          [6,420,960,720,60,null,null],
+          [7,420,960,720,60,null,null],
+          [8,420,960,720,60,null,null],
+          [9,420,960,720,60,null,null],
+          [10,420,960,720,60,null,null],
+          [11,420,960,720,60,null,null]
+        ],
+        []
+      ],
+      [
+        [
+          [0,420,960,720,60,null,null],
+          [1,430,970,720,60,null,null],
+          [2,450,990,720,60,null,null],
+          [3,460,1000,720,60,null,null],
+          [4,470,1010,720,60,null,null],
+          [5,490,1030,720,60,null,null],
+          [7,500,1040,720,60,null,null],
+          [9,510,1050,720,60,null,null],
+          [10,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [1,430,970,720,60,null,null],
+          [2,450,990,720,60,null,null],
+          [3,460,1000,720,60,null,null],
+          [4,470,1010,720,60,null,null],
+          [6,490,1030,720,60,null,null],
+          [8,500,1040,720,60,null,null],
+          [9,510,1050,720,60,null,null],
+          [10,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [1,430,970,720,60,null,null],
+          [3,450,990,720,60,null,null],
+          [5,460,1000,720,60,null,null],
+          [6,470,1010,720,60,null,null],
+          [7,490,1030,720,60,null,null],
+          [8,500,1040,720,60,null,null],
+          [9,510,1050,720,60,null,null],
+          [10,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [2,430,970,720,60,null,null],
+          [4,450,990,720,60,null,null],
+          [5,460,1000,720,60,null,null],
+          [6,470,1010,720,60,null,null],
+          [7,490,1030,720,60,null,null],
+          [8,500,1040,720,60,null,null],
+          [9,510,1050,720,60,null,null],
+          [10,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [1,420,960,720,60,null,null],
+          [2,430,970,720,60,null,null],
+          [3,450,990,720,60,null,null],
+          [4,460,1000,720,60,null,null],
+          [5,470,1010,720,60,null,null],
+          [6,490,1030,720,60,null,null],
+          [7,500,1040,720,60,null,null],
+          [8,510,1050,720,60,null,null],
+          [9,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [1,420,960,720,60,null,null],
+          [2,420,960,720,60,null,null],
+          [3,420,960,720,60,null,null],
+          [4,420,960,720,60,null,null],
+          [5,420,960,720,60,null,null],
+          [6,420,960,720,60,null,null],
+          [7,420,960,720,60,null,null],
+          [8,420,960,720,60,null,null],
+          [10,420,960,720,60,null,null]
+        ],
+        []
+      ],
+      [
+        [
+          [0,420,960,720,60,null,null],
+          [1,430,970,720,60,null,null],
+          [2,450,990,720,60,null,null],
+          [4,460,1000,720,60,null,null],
+          [6,470,1010,720,60,null,null],
+          [7,490,1030,720,60,null,null],
+          [8,500,1040,720,60,null,null],
+          [9,510,1050,720,60,null,null],
+          [10,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [1,430,970,720,60,null,null],
+          [3,450,990,720,60,null,null],
+          [5,460,1000,720,60,null,null],
+          [6,470,1010,720,60,null,null],
+          [7,490,1030,720,60,null,null],
+          [8,500,1040,720,60,null,null],
+          [9,510,1050,720,60,null,null],
+          [10,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [2,430,970,720,60,null,null],
+          [3,450,990,720,60,null,null],
+          [4,460,1000,720,60,null,null],
+          [5,470,1010,720,60,null,null],
+          [6,490,1030,720,60,null,null],
+          [7,500,1040,720,60,null,null],
+          [8,510,1050,720,60,null,null],
+          [9,530,1070,720,60,null,null],
+          [10,540,1080,720,60,null,null]
+        ],
+        [
+          [1,420,960,720,60,null,null],
+          [2,430,970,720,60,null,null],
+          [3,450,990,720,60,null,null],
+          [4,460,1000,720,60,null,null],
+          [5,470,1010,720,60,null,null],
+          [6,490,1030,720,60,null,null],
+          [7,500,1040,720,60,null,null],
+          [8,510,1050,720,60,null,null],
+          [9,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [1,430,970,720,60,null,null],
+          [2,450,990,720,60,null,null],
+          [3,460,1000,720,60,null,null],
+          [4,470,1010,720,60,null,null],
+          [5,490,1030,720,60,null,null],
+          [6,500,1040,720,60,null,null],
+          [8,510,1050,720,60,null,null],
+          [10,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [1,420,960,720,60,null,null],
+          [2,420,960,720,60,null,null],
+          [3,420,960,720,60,null,null],
+          [4,420,960,720,60,null,null],
+          [5,420,960,720,60,null,null],
+          [7,420,960,720,60,null,null],
+          [9,420,960,720,60,null,null],
+          [10,420,960,720,60,null,null],
+          [11,420,960,720,60,null,null]
+        ],
+        []
+      ],
+      [
+        [
+          [1,420,960,720,60,null,null],
+          [3,430,970,720,60,null,null],
+          [4,450,990,720,60,null,null],
+          [5,460,1000,720,60,null,null],
+          [6,470,1010,720,60,null,null],
+          [7,490,1030,720,60,null,null],
+          [8,500,1040,720,60,null,null],
+          [9,510,1050,720,60,null,null],
+          [10,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [2,430,970,720,60,null,null],
+          [3,450,990,720,60,null,null],
+          [4,460,1000,720,60,null,null],
+          [5,470,1010,720,60,null,null],
+          [6,490,1030,720,60,null,null],
+          [7,500,1040,720,60,null,null],
+          [8,510,1050,720,60,null,null],
+          [9,530,1070,720,60,null,null],
+          [10,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [1,430,970,720,60,null,null],
+          [2,450,990,720,60,null,null],
+          [3,460,1000,720,60,null,null],
+          [4,470,1010,720,60,null,null],
+          [5,490,1030,720,60,null,null],
+          [6,500,1040,720,60,null,null],
+          [7,510,1050,720,60,null,null],
+          [9,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [1,430,970,720,60,null,null],
+          [2,450,990,720,60,null,null],
+          [3,460,1000,720,60,null,null],
+          [4,470,1010,720,60,null,null],
+          [5,490,1030,720,60,null,null],
+          [6,500,1040,720,60,null,null],
+          [8,510,1050,720,60,null,null],
+          [10,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [1,430,970,720,60,null,null],
+          [2,450,990,720,60,null,null],
+          [3,460,1000,720,60,null,null],
+          [5,470,1010,720,60,null,null],
+          [7,490,1030,720,60,null,null],
+          [8,500,1040,720,60,null,null],
+          [9,510,1050,720,60,null,null],
+          [10,530,1070,720,60,null,null],
+          [11,540,1080,720,60,null,null]
+        ],
+        [
+          [0,420,960,720,60,null,null],
+          [1,420,960,720,60,null,null],
+          [2,420,960,720,60,null,null],
+          [4,420,960,720,60,null,null],
+          [6,420,960,720,60,null,null],
+          [7,420,960,720,60,null,null],
+          [8,420,960,720,60,null,null],
+          [9,420,960,720,60,null,null],
+          [10,420,960,720,60,null,null],
+          [11,420,960,720,60,null,null]
+        ],
+        []
+      ]
+    ]
+  },
+  "compliance": {
+    "alerts": [
+      ["ok","compliant","Escala dentro das regras","2 folgas por semana, domingos no revezamento certo e nenhum período de 7 dias seguidos nas 4 semanas.",null],
+      ["warn","short-day","Dia mais curto que a jornada","Sáb: abre 6h e a jornada pede 9h com almoço. Quem trabalha nesse dia sai depois do fechamento; ajuste o horário ou dê folga nesse dia.",null],
+      ["ok","same-lunch","Todos almoçam no mesmo horário","Na Seg, ninguém fica na empresa durante o almoço. Se alguém precisa atender nesse horário, combine um revezamento no almoço.",null]
+    ],
+    "cellErrors": [],
+    "weeksWithIssues": []
+  },
+  "cost": {
+    "teamSize": 10,
+    "costPerEmployee": 3912.5,
+    "payroll": 39125,
+    "targetPhase": "40",
+    "hourlyCostToday": 17.78409090909091,
+    "hourlyCostTarget": 19.5625,
+    "hourlyIncreasePercent": 10.000000000000009,
+    "hoursLostPerMonth": 200,
+    "costToKeepCoverage": 3912.5,
+    "missingHeadcount": 2,
+    "hiringCost": 7825,
+    "overtimeCost": 9674.999999999998,
+    "hourlyCostByPhase": [
+      {
+        "phase": "44",
+        "hourlyCost": 17.78409090909091,
+        "increasePercent": 0
+      },
+      {
+        "phase": "42",
+        "hourlyCost": 18.63095238095238,
+        "increasePercent": 4.761904761904767
+      },
+      {
+        "phase": "40",
+        "hourlyCost": 19.5625,
+        "increasePercent": 10.000000000000009
+      }
+    ]
+  }
+}
